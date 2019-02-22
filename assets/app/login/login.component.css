@@ -1,0 +1,17 @@
+.size{
+     font-size: 2rem;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+
+     text-decoration-style: solid
+}
+
+.img1 {
+    background-image: linear-gradient(30deg, rgba(10, 8, 8, 0.747) 40%, rgba(81, 190, 223, 0.7)), url("/assets/Desktop/bkg 5.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 778px;
+    position: fixed;
+    width: 100%;
+}

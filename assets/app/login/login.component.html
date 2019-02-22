@@ -1,0 +1,65 @@
+<div class=" jumbotron jumbotron-fluid row">
+
+ <div class="col-lg-3"></div>
+
+  <div class="col-lg-6">
+  <div class="card text-center">
+    <div class="card-header  bg-success ">
+      <p class="blockquote size"> <em>COGNIZANT GREEN STAR PERFORMANCE MANAGEMENT APPLICATION </em></p>
+    </div>
+
+
+    <div class="card-body">
+
+     
+     
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">USER ID</label>
+            <input type="text" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter UserID"
+              name="username" [(ngModel)]="username">
+              <small id="emailHelp" class="form-text text-muted">Username and Password are Case Sensitive</small>
+          </div>
+          <div class="form-group ">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" [(ngModel)]="password" name="password"
+              required>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">I Accept T & C !</label>
+          </div>
+
+          <div *ngIf="error">
+            <p class="text-danger">{{ message }}</p>
+          </div>
+          <button class="btn btn-success" (click)="login()">Submit</button>
+        </form>
+      
+     
+    </div>
+
+  </div>
+</div>
+
+ <div class="col-lg-3"></div>
+ 
+
+   <div class="col-lg-3"></div>
+
+
+<div class="col-lg-6">
+  <div class="card text-center ">
+    <!--<div class="card-header"> </div>-->
+    <div class="card-body">
+      <h5 class="card-title">Not A Memeber Yet ... </h5>
+      <p class="card-text">Want to Become a memebr of Cognizant Green Star Performance Management System</p>
+      <a routerLink="/Register" class="btn btn-info btn-lg">REGISTER HERE .. </a>
+    </div>
+    <div class="card-footer text-muted">
+      @ All Right Reserved .. !
+    </div>
+  </div>
+</div>
+<div class="col-lg-3"></div>
+</div>
